@@ -42,17 +42,6 @@ All launchers will run the same simple distributed script (`distributed_sum.py`)
 
 This allows for direct comparison between launchers.
 
-## Launcher Comparison
-
-| Launcher | Pros | Cons | Best For |
-|----------|------|------|----------|
-| **torchrun** | Built into PyTorch, simple | Basic features | Quick prototyping |
-| **srun** | Native SLURM integration | Requires manual env setup | Production SLURM jobs |
-| **accelerate** | User-friendly, portable | Additional dependency | HuggingFace ecosystem |
-| **DeepSpeed** | Memory optimization, ZeRO | Complex setup | Large models |
-| **Submitit** | Python-native SLURM submission | Additional dependency | Dynamic SLURM submission |
-| **Ray** | Flexible distributed computing | Complex for simple cases | Complex distributed workflows |
-
 ## 1. torchrun
 
 ### Overview
