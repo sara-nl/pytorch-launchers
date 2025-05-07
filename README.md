@@ -360,16 +360,3 @@ To test all launchers locally (simulating a SLURM environment), run:
 ```bash
 pytest tests/test_launchers.py -v
 ```
-
-## Conclusion
-
-Each launcher has its strengths and ideal use cases:
-
-- **torchrun**: Simple, built into PyTorch, good for quick prototyping
-- **srun**: Native SLURM integration, efficient for production jobs
-- **accelerate**: User-friendly, portable across different setups
-- **DeepSpeed**: Memory optimization, ideal for large models
-- **Submitit**: Python-native SLURM submission, good for programmatic workflows
-- **Ray**: Flexible distributed computing, great for complex workflows
-
-Choose the launcher that best fits your specific needs and infrastructure.
